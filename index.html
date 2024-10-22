@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filipe Chagas - Resume</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-teal-custom {
+        background-color: #2a9d8f;
+      }
+      .text-teal-custom {
+        color: #2a9d8f;
+      }
+      .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 0.75rem;
+      }
+      .experience-card {
+        border: 1px solid #e2e8f0;
+        border-radius: 0.375rem;
+        padding: 0.75rem;
+      }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        background-color: #e2e8f0;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+          padding: 0 !important;
+          font-size: 12px;
+          line-height: 1.2;
+        }
+
+        @page {
+          margin: 0.25in;
+          size: letter;
+        }
+
+        .max-w-6xl {
+          max-width: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        .flex-col.md\:flex-row {
+          display: flex !important;
+          flex-direction: row !important;
+        }
+
+        /* Adjusted column widths */
+        .md\:w-3\/4 {
+          width: 75% !important;
+        }
+        .md\:w-1\/4 {
+          width: 25% !important;
+        }
+
+        .p-8 {
+          padding: 1rem !important;
+        }
+        .mb-8 {
+          margin-bottom: 0.75rem !important;
+        }
+        .mb-6 {
+          margin-bottom: 0.5rem !important;
+        }
+        .mb-4 {
+          margin-bottom: 0.25rem !important;
+        }
+        .mb-2 {
+          margin-bottom: 0.15rem !important;
+        }
+
+        .text-4xl {
+          font-size: 1.5rem !important;
+        }
+        .text-xl {
+          font-size: 1rem !important;
+        }
+        .text-lg {
+          font-size: 0.9rem !important;
+        }
+        .text-base {
+          font-size: 0.8rem !important;
+        }
+        .text-sm {
+          font-size: 0.75rem !important;
+        }
+        .text-xs {
+          font-size: 0.7rem !important;
+        }
+
+        .bg-teal-custom {
+          background-color: #2a9d8f !important;
+          color: white !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
+        .experience-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 0.5rem !important;
+        }
+
+        .experience-card {
+          padding: 0.5rem !important;
+        }
+
+        ul,
+        li {
+          break-inside: avoid;
+        }
+
+        .shadow-lg {
+          box-shadow: none !important;
+        }
+
+        .profile-img {
+          width: 100px !important;
+          height: 100px !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-6 md:p-12 font-sans">
+    <div class="max-w-6xl mx-auto bg-white shadow-lg">
+      <div class="flex flex-col md:flex-row">
+        <!-- Left Column - now wider -->
+        <div class="w-full md:w-3/4 p-8">
+          <!-- Header -->
+          <header class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">FILIPE CHAGAS</h1>
+            <h2 class="text-xl text-gray-600 mt-1">Senior Backend Engineer</h2>
+            <div class="text-sm text-gray-600 mt-2">
+              <span>frocchagas@gmail.com</span> ·
+              <span>Bauru, São Paulo, Brazil</span> ·
+              <span>linkedin.com/in/filipeochagas</span>
+            </div>
+          </header>
+
+          <!-- Summary -->
+          <section class="mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-2">SUMMARY</h3>
+            <p class="text-gray-700">
+              Seasoned software developer with nearly 20 years of industry
+              experience, including a decade of success in remote, distributed,
+              and multidisciplinary team environments. Demonstrated proficiency
+              in a diverse range of languages and frameworks, including Ruby,
+              Ruby on Rails, TypeScript, JavaScript, Node.js, Next.js, and
+              React.
+            </p>
+          </section>
+
+          <!-- Professional Experience -->
+          <section class="mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">
+              PROFESSIONAL EXPERIENCE
+            </h3>
+
+            <!-- Toptal -->
+            <div class="mb-6">
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-base font-semibold">Senior Backend Engineer</h4>
+                <span class="text-sm text-gray-600">2021 - Present</span>
+              </div>
+              <div class="text-teal-custom font-medium">Toptal</div>
+              <ul class="list-disc ml-4 mt-2 text-sm text-gray-700">
+                <li>
+                  Leveraged backend expertise within a cross-functional team to
+                  deliver high-impact projects
+                </li>
+                <li>
+                  Led the re-branding and re-platforming of several widely used
+                  public tools
+                </li>
+                <li>Engineered robust internal solutions for the SEM team</li>
+              </ul>
+            </div>
+
+            <!-- Quéz Media Marketing Lead -->
+            <div class="mb-6">
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-base font-semibold">Lead Software Engineer</h4>
+                <span class="text-sm text-gray-600">2014 - 2021</span>
+              </div>
+              <div class="text-teal-custom font-medium">
+                Quéz Media Marketing
+              </div>
+              <ul class="list-disc ml-4 mt-2 text-sm text-gray-700">
+                <li>
+                  Led a team of backend and frontend developers, designers,
+                  project managers and QA
+                </li>
+                <li>
+                  Implemented Agile style of project management and software
+                  delivery
+                </li>
+                <li>Introduced quality-first, well tested code philosophy</li>
+              </ul>
+            </div>
+
+            <!-- Previous Experience Grid -->
+            <div class="experience-grid mt-8">
+              <div class="experience-card">
+                <h4 class="text-sm font-semibold">Java Developer</h4>
+                <div class="text-teal-custom text-sm">NetSAR</div>
+                <div class="text-xs text-gray-600">2010</div>
+                <div class="text-xs mt-2">Java, Spring, Hibernate</div>
+              </div>
+
+              <div class="experience-card">
+                <h4 class="text-sm font-semibold">Java Developer</h4>
+                <div class="text-teal-custom text-sm">G&P</div>
+                <div class="text-xs text-gray-600">2008</div>
+                <div class="text-xs mt-2">Java, JSP, Servlets</div>
+              </div>
+
+              <div class="experience-card">
+                <h4 class="text-sm font-semibold">Java Developer</h4>
+                <div class="text-teal-custom text-sm">UpperCase</div>
+                <div class="text-xs text-gray-600">2007</div>
+                <div class="text-xs mt-2">Java, J2EE</div>
+              </div>
+
+              <div class="experience-card">
+                <h4 class="text-sm font-semibold">Delphi Developer</h4>
+                <div class="text-teal-custom text-sm">2 Leões Informática</div>
+                <div class="text-xs text-gray-600">2005 - 2006</div>
+                <div class="text-xs mt-2">Delphi, SQL</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Education -->
+          <section>
+            <h3 class="text-lg font-bold text-gray-800 mb-4">EDUCATION</h3>
+            <div class="mb-4">
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-base font-semibold">
+                  Information Systems Bachelor
+                </h4>
+                <span class="text-sm text-gray-600">2014</span>
+              </div>
+              <div class="text-teal-custom font-medium">
+                Faculdade Gennari & Peartree
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-base font-semibold">Information Technology</h4>
+                <span class="text-sm text-gray-600">2003 - 2004</span>
+              </div>
+              <div class="text-teal-custom font-medium">
+                ETEC Centro Paula Souza
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Column -->
+        <div class="w-full md:w-1/4 bg-teal-custom p-8 text-white">
+          <!-- Profile Picture -->
+
+          <img
+            src="https://raw.githubusercontent.com/filipechagas/filipechagas.github.io/main/assets/filipechagas.jpeg"
+            alt="Profile"
+            class="profile-img object-cover md:mx-auto"
+          />
+
+          <!-- Skills -->
+          <section class="mb-8">
+            <h3 class="text-lg font-bold mb-4">SKILLS</h3>
+
+            <h4 class="font-semibold mb-2">Languages & Frameworks</h4>
+            <ul class="list-none mb-4 text-sm">
+              <li class="mb-1">Ruby, Ruby on Rails</li>
+              <li class="mb-1">TypeScript, JavaScript</li>
+              <li class="mb-1">Node.js, Next.js, React</li>
+              <li class="mb-1">Java, Delphi</li>
+            </ul>
+
+            <h4 class="font-semibold mb-2">Databases</h4>
+            <ul class="list-none mb-4 text-sm">
+              <li class="mb-1">PostgreSQL, MySQL</li>
+              <li class="mb-1">Oracle, MongoDB</li>
+              <li class="mb-1">Redis, ElasticSearch</li>
+            </ul>
+
+            <h4 class="font-semibold mb-2">DevOps & Tools</h4>
+            <ul class="list-none mb-4 text-sm">
+              <li class="mb-1">Docker, Kubernetes</li>
+              <li class="mb-1">Helm, Terraform</li>
+              <li class="mb-1">GKE, Kafka</li>
+            </ul>
+
+            <h4 class="font-semibold mb-2">Languages</h4>
+            <ul class="list-none mb-4 text-sm">
+              <li class="mb-1">English (Professional)</li>
+              <li class="mb-1">Portuguese (Native)</li>
+            </ul>
+          </section>
+
+          <!-- Certifications -->
+          <section class="mb-8">
+            <h3 class="text-lg font-bold mb-4">CERTIFICATIONS</h3>
+            <ul class="list-none text-sm">
+              <li class="mb-2">React.js Essential Training</li>
+              <li class="mb-2">React: Server-Side Rendering</li>
+              <li class="mb-2">React.js: Building an Interface</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

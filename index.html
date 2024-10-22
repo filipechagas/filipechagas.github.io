@@ -8,6 +8,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <style>
       .bg-teal-custom {
         background-color: #2a9d8f;
@@ -15,12 +19,20 @@
       .text-teal-custom {
         color: #2a9d8f;
       }
+
+      .education-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 0.75rem;
+      }
+
       .experience-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 0.75rem;
       }
-      .experience-card {
+      .experience-card,
+      .education-card {
         border: 1px solid #e2e8f0;
         border-radius: 0.375rem;
         padding: 0.75rem;
@@ -31,6 +43,26 @@
         background-color: #e2e8f0;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
+      }
+
+      .contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+
+      .separator {
+        margin: 0 0.5rem;
+      }
+
+      .contact-link {
+        color: #4b5563; /* text-gray-600 */
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .contact-link:hover {
+        color: #1a7268; /* matches our teal custom color */
       }
 
       @media print {
@@ -107,12 +139,14 @@
           print-color-adjust: exact !important;
         }
 
-        .experience-grid {
+        .experience-grid,
+        .education-grid {
           grid-template-columns: repeat(2, 1fr) !important;
           gap: 0.5rem !important;
         }
 
-        .experience-card {
+        .experience-card,
+        .education-card {
           padding: 0.5rem !important;
         }
 
@@ -142,9 +176,34 @@
             <h1 class="text-4xl font-bold text-gray-800">FILIPE CHAGAS</h1>
             <h2 class="text-xl text-gray-600 mt-1">Senior Backend Engineer</h2>
             <div class="text-sm text-gray-600 mt-2">
-              <span>frocchagas@gmail.com</span> ·
-              <span>Bauru, São Paulo, Brazil</span> ·
-              <span>linkedin.com/in/filipeochagas</span>
+              <span class="contact-item">
+                <i class="fas fa-envelope text-teal-custom"></i>
+                <a
+                  href="mailto:filipe@ochagas.com"
+                  class="contact-link hover:text-teal-custom"
+                >
+                  filipe@ochagas.com
+                </a>
+              </span>
+              <span class="separator">·</span>
+
+              <span class="contact-item">
+                <i class="fas fa-map-marker-alt text-teal-custom"></i>
+                <span>Bauru, São Paulo, Brazil</span>
+              </span>
+              <span class="separator">·</span>
+
+              <span class="contact-item">
+                <i class="fab fa-linkedin text-teal-custom"></i>
+                <a
+                  href="https://linkedin.com/in/filipeochagas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link hover:text-teal-custom"
+                >
+                  linkedin.com/in/filipeochagas
+                </a>
+              </span>
             </div>
           </header>
 
@@ -157,7 +216,13 @@
               and multidisciplinary team environments. Demonstrated proficiency
               in a diverse range of languages and frameworks, including Ruby,
               Ruby on Rails, TypeScript, JavaScript, Node.js, Next.js, and
-              React.
+              React. Adept in database management and querying technologies such
+              as PostgreSQL, MySQL, Oracle, ElasticSearch, and Google Big Query.
+              Skilled in leveraging modern infrastructure and deployment tools
+              like Kafka, Kubernetes, GKE, and Helm to streamline development
+              processes. Pragmatic, quick to learn, and versatile, with a proven
+              track record of excelling in various roles across the software
+              development lifecycle.
             </p>
           </section>
 
@@ -209,6 +274,29 @@
               </ul>
             </div>
 
+            <!-- Quéz Media Marketing Full Stack -->
+            <div class="mb-6">
+              <div class="flex justify-between items-baseline">
+                <h4 class="text-base font-semibold">Full Stack Engineer</h4>
+                <span class="text-sm text-gray-600">2011 - 2014</span>
+              </div>
+              <div class="text-teal-custom font-medium">
+                Quéz Media Marketing
+              </div>
+              <ul class="list-disc ml-4 mt-2 text-sm text-gray-700">
+                <li>
+                  On demand web solutions built primarily, but not exclusively,
+                  in Ruby, Ruby on Rails, Sinatra, JavaScript, Redis,
+                  Elasticsearch, PostgreSQL, MySQL, MongoDB, Capistrano, Docker
+                  and more.
+                </li>
+                <li>
+                  Responsible for all stages of development, from gathering
+                  specs to deployment.
+                </li>
+              </ul>
+            </div>
+
             <!-- Previous Experience Grid -->
             <div class="experience-grid mt-8">
               <div class="experience-card">
@@ -244,24 +332,24 @@
           <!-- Education -->
           <section>
             <h3 class="text-lg font-bold text-gray-800 mb-4">EDUCATION</h3>
-            <div class="mb-4">
-              <div class="flex justify-between items-baseline">
-                <h4 class="text-base font-semibold">
+
+            <div class="education-grid mt-8">
+              <div class="education-card">
+                <h4 class="text-sm font-semibold">
                   Information Systems Bachelor
                 </h4>
-                <span class="text-sm text-gray-600">2014</span>
+                <div class="text-teal-custom text-sm">
+                  Faculdade Gennari & Peartree
+                </div>
+                <div class="text-xs text-gray-600">2014</div>
               </div>
-              <div class="text-teal-custom font-medium">
-                Faculdade Gennari & Peartree
-              </div>
-            </div>
-            <div class="mb-4">
-              <div class="flex justify-between items-baseline">
-                <h4 class="text-base font-semibold">Information Technology</h4>
-                <span class="text-sm text-gray-600">2003 - 2004</span>
-              </div>
-              <div class="text-teal-custom font-medium">
-                ETEC Centro Paula Souza
+
+              <div class="education-card">
+                <h4 class="text-sm font-semibold">Information Technology</h4>
+                <div class="text-teal-custom text-sm">
+                  ETEC Centro Paula Souza
+                </div>
+                <div class="text-xs text-gray-600">2003 - 2004</div>
               </div>
             </div>
           </section>
@@ -285,8 +373,8 @@
             <ul class="list-none mb-4 text-sm">
               <li class="mb-1">Ruby, Ruby on Rails</li>
               <li class="mb-1">TypeScript, JavaScript</li>
-              <li class="mb-1">Node.js, Next.js, React</li>
-              <li class="mb-1">Java, Delphi</li>
+              <li class="mb-1">Node.js, Next.js, React, ExpressJS</li>
+              <li class="mb-1">Java, C#</li>
             </ul>
 
             <h4 class="font-semibold mb-2">Databases</h4>
@@ -307,16 +395,6 @@
             <ul class="list-none mb-4 text-sm">
               <li class="mb-1">English (Professional)</li>
               <li class="mb-1">Portuguese (Native)</li>
-            </ul>
-          </section>
-
-          <!-- Certifications -->
-          <section class="mb-8">
-            <h3 class="text-lg font-bold mb-4">CERTIFICATIONS</h3>
-            <ul class="list-none text-sm">
-              <li class="mb-2">React.js Essential Training</li>
-              <li class="mb-2">React: Server-Side Rendering</li>
-              <li class="mb-2">React.js: Building an Interface</li>
             </ul>
           </section>
         </div>

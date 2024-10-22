@@ -56,13 +56,13 @@
       }
 
       .contact-link {
-        color: #4b5563; /* text-gray-600 */
+        color: #4b5563;
         text-decoration: none;
         transition: color 0.2s;
       }
 
       .contact-link:hover {
-        color: #1a7268; /* matches our teal custom color */
+        color: #1a7268;
       }
 
       @media print {
@@ -71,6 +71,11 @@
           padding: 0 !important;
           font-size: 12px;
           line-height: 1.2;
+        }
+
+        body header h1,
+        .profile-img {
+          margin-top: 32px;
         }
 
         @page {
@@ -84,17 +89,32 @@
           padding: 0 !important;
         }
 
+        /* Updated flex container styles */
         .flex-col.md\:flex-row {
           display: flex !important;
           flex-direction: row !important;
+          min-height: 100vh !important; /* Ensure minimum height of viewport */
         }
 
-        /* Adjusted column widths */
+        /* Updated column styles */
         .md\:w-3\/4 {
           width: 75% !important;
+          flex: 0 0 75% !important; /* Prevent shrinking */
         }
+
         .md\:w-1\/4 {
           width: 25% !important;
+          flex: 0 0 25% !important; /* Prevent shrinking */
+          min-height: 100vh !important; /* Full height for sidebar */
+        }
+
+        /* Force background color in print */
+        .bg-teal-custom {
+          background-color: #2a9d8f !important;
+          color: white !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          page-break-inside: avoid !important;
         }
 
         .p-8 {
@@ -130,13 +150,6 @@
         }
         .text-xs {
           font-size: 0.7rem !important;
-        }
-
-        .bg-teal-custom {
-          background-color: #2a9d8f !important;
-          color: white !important;
-          -webkit-print-color-adjust: exact !important;
-          print-color-adjust: exact !important;
         }
 
         .experience-grid,
@@ -298,7 +311,7 @@
             </div>
 
             <!-- Previous Experience Grid -->
-            <div class="experience-grid mt-8">
+            <div class="experience-grid">
               <div class="experience-card">
                 <h4 class="text-sm font-semibold">Java Developer</h4>
                 <div class="text-teal-custom text-sm">NetSAR</div>
@@ -333,7 +346,7 @@
           <section>
             <h3 class="text-lg font-bold text-gray-800 mb-4">EDUCATION</h3>
 
-            <div class="education-grid mt-8">
+            <div class="education-grid">
               <div class="education-card">
                 <h4 class="text-sm font-semibold">
                   Information Systems Bachelor

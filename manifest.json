@@ -1,0 +1,14 @@
+{
+  "name": "Filipe Chagas Resume",
+  "short_name": "FC Resume",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#2a9d8f",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
